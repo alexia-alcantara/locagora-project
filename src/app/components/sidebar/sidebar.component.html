@@ -7,44 +7,53 @@
             <div class=" select-none mt-7">
                 
                 <ul class="list-menu list-none p-3 lg:py-3 lg:px-2 m-0 border-0" >
-                    <li>
-                        <a pRipple class="flex flex-wrap lg:justify-content-center cursor-pointer p-3 hover:bg-gray-800 border-round  hover:text-white transition-duration-150 transition-colors">
+                    <li >
+                        <a pRipple class="flex flex-wrap lg:justify-content-center cursor-pointer p-3 border-round  transition-duration-150 transition-colors">
                             <img src="assets/images/logos/im_logo.svg" alt="logo-menu" [style]="{'width': '3.5rem'}">
                         </a>
                     </li>
-                    <li>
-                        <a pRipple class="flex flex-wrap lg:justify-content-center cursor-pointer p-3 hover:bg-gray-800 border-round  hover:text-white transition-duration-150 transition-colors">
-                            <img src="assets/images/ic_menu_contratos.svg" alt="" class="mr-2 lg:mr-0 text-base lg:text-xl">
-                            <span class="font-medium inline " routerLink="/contatos">Contatos</span>
+                    <li routerLinkActive="active" routerLink="/contatos">
+                        <a pRipple class="flex flex-wrap lg:justify-content-center cursor-pointer p-3 border-round  transition-duration-150 transition-colors">
+                            <img src="assets/images/ic_menu_contratos.svg" alt="icon-contratos" class="mr-2 lg:mr-0 text-base lg:text-xl" routerLinkActive="active">
+                            <span class="font-medium inline color-active" routerLinkActive="active" >Contatos</span>
                         </a>
                     </li>
-                    <li>
-                        <a pRipple class="flex flex-wrap lg:justify-content-center cursor-pointer p-3 hover:bg-gray-800 border-round  hover:text-white transition-duration-150 transition-colors">
-                            <img src="assets/images/ic_menu_usuarios.svg" alt="" class="mr-2 lg:mr-0 text-base lg:text-xl">
-                            <span class="font-medium inline " routerLink="/usuarios">Usuários</span>
+                    <li routerLinkActive="active" routerLink="/usuarios">
+                        <a pRipple class="flex flex-wrap lg:justify-content-center cursor-pointer p-3 border-round  transition-duration-150 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22.896" height="22.896" viewBox="0 0 22.896 22.896" alt="icon-usuarios" class="color-active mr-2 lg:mr-0 text-base lg:text-xl" routerLinkActive="active">
+                                <path id="ic_menu_usuarios" d="M11.448,12.879A6.439,6.439,0,1,0,5.008,6.439,6.441,6.441,0,0,0,11.448,12.879Zm5.724,1.431H14.708a7.784,7.784,0,0,1-6.52,0H5.724A5.723,5.723,0,0,0,0,20.034v.715A2.147,2.147,0,0,0,2.146,22.9h18.6A2.147,2.147,0,0,0,22.9,20.749v-.715A5.723,5.723,0,0,0,17.172,14.31Z"/>
+                              </svg>
+                              
+                            <span class="font-medium inline color-active" routerLinkActive="active" >Usuários</span>
                         </a>
                     </li>
-                    <li>
-                        <a pRipple class="flex flex-wrap lg:justify-content-center cursor-pointer p-3 hover:bg-gray-800 border-round  hover:text-white transition-duration-150 transition-colors">
-                            <img src="assets/images/ic_menu_planos.svg" alt="" class="mr-2 lg:mr-0 text-base lg:text-xl">
-                            <span class="font-medium inline " routerLink="/planos">Planos</span>
+                    <li routerLinkActive="active" routerLink="/planos">
+                        <a pRipple class="flex flex-wrap lg:justify-content-center cursor-pointer p-3 border-round  transition-duration-150 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22.896" height="18.603" viewBox="0 0 22.896 18.603" alt="icon-planos" class="color-active mr-2 lg:mr-0 text-base lg:text-xl" routerLinkActive="active">
+                                <path id="ic_menu_planos" d="M3.577,17.685H.715A.715.715,0,0,0,0,18.4v2.862a.715.715,0,0,0,.715.715H3.577a.715.715,0,0,0,.715-.715V18.4A.715.715,0,0,0,3.577,17.685Zm0-14.31H.715A.715.715,0,0,0,0,4.09V6.952a.715.715,0,0,0,.715.715H3.577a.715.715,0,0,0,.715-.715V4.09A.715.715,0,0,0,3.577,3.375Zm0,7.155H.715A.715.715,0,0,0,0,11.245v2.862a.715.715,0,0,0,.715.715H3.577a.715.715,0,0,0,.715-.715V11.245A.715.715,0,0,0,3.577,10.53Zm18.6,7.87H7.87a.715.715,0,0,0-.715.715v1.431a.715.715,0,0,0,.715.715H22.18a.715.715,0,0,0,.715-.715V19.116A.715.715,0,0,0,22.18,18.4Zm0-14.31H7.87a.715.715,0,0,0-.715.715V6.237a.715.715,0,0,0,.715.715H22.18a.715.715,0,0,0,.715-.715V4.806A.715.715,0,0,0,22.18,4.09Zm0,7.155H7.87a.715.715,0,0,0-.715.715v1.431a.715.715,0,0,0,.715.715H22.18a.715.715,0,0,0,.715-.715V11.961A.715.715,0,0,0,22.18,11.245Z" transform="translate(0 -3.375)"/>
+                              </svg>
+                              
+                            <span class="font-medium inline color-active" routerLinkActive="active" >Planos</span>
                         </a>
                     </li>
-                    <li>
-                        <a pRipple class="flex flex-wrap lg:justify-content-center cursor-pointer p-3 hover:bg-gray-800 border-round  hover:text-white transition-duration-150 transition-colors">
-                            <img src="assets/images/ic_menu_lojas.svg" alt="" class="mr-2 lg:mr-0 text-base lg:text-xl">
-                            <span class="font-medium inline " routerLink="/lojas">Lojas</span>
+                    <li routerLinkActive="active" routerLink="/lojas">
+                        <a pRipple class="flex flex-wrap lg:justify-content-center cursor-pointer p-3 border-round  transition-duration-150 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21.896" height="19.463" viewBox="0 0 21.896 19.463" alt="icon-lojas" class="color-active mr-2 lg:mr-0 text-base lg:text-xl" routerLinkActive="active">
+                                <path id="ic_menu_lojas" d="M25.179,6H5.716V8.433H25.179ZM26.4,18.164V15.731L25.179,9.649H5.716L4.5,15.731v2.433H5.716v7.3H17.881v-7.3h4.866v7.3h2.433v-7.3ZM15.448,23.03h-7.3V18.164h7.3Z" transform="translate(-4.5 -6)"/>
+                              </svg>
+                              
+                            <span class="font-medium inline color-active" routerLinkActive="active" >Lojas</span>
                         </a>
                     </li>
-                    <li>
-                        <a pRipple class="flex flex-wrap lg:justify-content-center cursor-pointer p-3 hover:bg-gray-800 border-round  hover:text-white transition-duration-150 transition-colors">
-                            <img src="assets/images/ic_menu_usuarios.svg" alt="" class="mr-2 lg:mr-0 text-base lg:text-xl">
-                            <span class="font-medium inline ">Notificações</span>
+                    <li routerLinkActive="active">
+                        <a pRipple class="flex flex-wrap lg:justify-content-center cursor-pointer p-3 border-round  transition-duration-150 transition-colors">
+                            <img src="assets/images/ic_menu_usuarios.svg" alt="icon-notificacoes" class="mr-2 lg:mr-0 text-base lg:text-xl" routerLinkActive="active">
+                            <span class="font-medium inline color-active" routerLinkActive="active">Notificações</span>
                         </a>
                     </li>
-                    <li>
-                        <a pRipple class="flex flex-wrap lg:justify-content-center cursor-pointer p-3 hover:bg-gray-800 border-round  hover:text-white transition-duration-150 transition-colors">
-                            <img src="assets/images/ic_menu_sair.svg" alt="" class="mr-2 lg:m-1 text-base lg:text-xl ">
+                    <li routerLinkActive="active">
+                        <a pRipple class="flex flex-wrap lg:justify-content-center cursor-pointer p-3 border-round  transition-duration-150 transition-colors">
+                            <img src="assets/images/ic_menu_sair.svg" alt="icon-sair" class="mr-2 lg:m-1 text-base lg:text-xl" routerLinkActive="active">
                             <span class="font-medium ">Sair</span>
                         </a>
                     </li>
