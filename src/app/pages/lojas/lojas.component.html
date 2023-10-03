@@ -1,0 +1,45 @@
+<p-card>
+    <p-card>
+        <p-table
+    [value]="shops"
+    [paginator]="true"
+    [rows]="9"
+    [tableStyle]="{ 'min-width': '50rem' }"
+    [rowsPerPageOptions]="[10, 20, 30]"
+    >
+    <ng-template pTemplate="header">
+        <tr>
+            <th>Nome da Loja</th>
+            <th>Responsável</th>
+            <th>E-mail</th>
+            <th>Telefone</th>
+            <th>Cidade</th>
+            <th>UF</th>
+            <th>Ação</th>
+            <th [style]="{'text-align': 'end', 'width': '11.9rem'}">
+                <button pButton pRipple label="Adicionar Loja" icon="pi pi-plus" routerLink="./detalhe-loja" class="p-button p-button-principal p-button-rounded" ></button>
+            </th>
+        </tr>
+    </ng-template>
+    <ng-template pTemplate="body" let-shops>
+        <tr>
+            <td>{{ shops.name }}</td>
+            <td>{{ shops.responsible }}</td>
+            <td>{{ shops.email }}</td>
+            <td>{{ shops.telephone }}</td>
+            <td>{{ shops.city }}</td>
+            <td>{{ shops.uf }}</td>
+            <td>
+                <div class="flex flex-row flex-wrap">
+                    <i class="pi pi-pencil text-gray-400 text-lg font-bold mr-2"></i>
+                    <i class="pi pi-times text-gray-400 text-lg font-bold mb-3"></i>
+                </div>
+            </td>
+            <td></td>
+           
+        </tr>
+    </ng-template>
+    
+    </p-table>
+    </p-card>
+</p-card>

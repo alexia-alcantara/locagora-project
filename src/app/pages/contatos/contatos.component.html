@@ -1,0 +1,34 @@
+<p-card>
+    <p-table
+[value]="contacts"
+[paginator]="true"
+[rows]="9"
+[tableStyle]="{ 'min-width': '50rem' }"
+[rowsPerPageOptions]="[10, 20, 30]"
+>
+<ng-template pTemplate="header">
+    <tr>
+        <th>Nome do Contato</th>
+        <th>E-mail</th>
+        <th>Telefone</th>
+        <th>Endereço</th>
+        <th>Plano</th>
+        <th>Status</th>
+    </tr>
+</ng-template>
+<ng-template pTemplate="body" let-contacts>
+    <tr>
+        <td>{{ contacts.name }}</td>
+        <td>{{ contacts.email }}</td>
+        <td>{{ contacts.telephone }}</td>
+        <td>{{ contacts.address }}</td>
+        <td>{{ contacts.planName }}</td>
+        <td>
+            <p-dropdown [options]="status" [(ngModel)]="selectedStatus" optionLabel="name"></p-dropdown>
+
+        </td>
+    </tr>
+</ng-template>
+
+</p-table>
+</p-card>

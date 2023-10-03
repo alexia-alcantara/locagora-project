@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+@import "primeflex/primeflex.css";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;800;900&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+@import './assets/scss/abstracts/mixins';
+@import './assets/scss/abstracts/variables';
+
+@import './assets/scss/base/animations';
+@import './assets/scss/base/base';
+@import './assets/scss/base/typography';
+@import './assets/scss/base/utilities';
+
+@import './assets/scss/components/button';
+@import './assets/scss/components/dropdown';
+@import './assets/scss/components/input';
+@import './assets/scss/components/p-tables';
+
+@import './assets/scss/layout/header';
+
+@import './assets/scss/components/button';
+
+@import './assets/scss/pages/home';
+
+@font-face {
+    font-family: 'Segoe UI', sans-serif;
+    src: url(assets/fonts/Segoe.otf);
+}
+
+@font-face {
+    font-family: 'Segoe UI Bold', sans-serif;
+    src: url(assets/fonts/SegoeUI_Bold.otf);
+}
+
+@font-face {
+    font-family: 'Segoe Regular', sans-serif;
+    src: url(assets/fonts/Segoe.otf);
+}

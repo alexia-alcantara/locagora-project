@@ -1,0 +1,26 @@
+.p-button{
+    border-radius: 3rem;
+    background-color: $color-black;
+    border-color: $color-black;
+
+}
+
+.p-button-label{
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.p-button.p-button-danger{
+    background-color: $color-red-btn-cancel;
+    border-radius: 4px;
+    height: 2.3rem;
+}
+
+.p-button-save{
+    background-color: $color-blue-btn-save;
+    border-color: $color-blue-btn-save;
+    border-radius: 4px;
+    width: 7.7rem;
+    height: 2.3rem;
+}

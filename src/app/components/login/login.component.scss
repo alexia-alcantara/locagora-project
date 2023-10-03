@@ -1,0 +1,33 @@
+@import '../../../assets/scss/abstracts/variables';
+
+.boxLogin{
+    background-image: url(./../../../assets/images/im_login.jpg);
+    background-size: cover;
+    height: 100%;
+    background-position: center;
+    .surface-card{
+        box-shadow: 0px 3px 6px #00000029;
+    
+        .pi-compass{
+            position: relative;
+            left: 45%;
+            bottom: 3rem;
+            font-size: 3rem
+        }
+        
+        .p-button-principal{
+            width: 45%;
+        }
+
+        .field > label{
+            font: normal normal bold 15px/23px Poppins;
+            color: $color-black;
+        }
+
+        a{
+            font: normal normal normal 15px/15px Poppins;
+            color: $color-blue-btn-save;
+        }
+        
+    }
+}

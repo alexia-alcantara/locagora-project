@@ -1,0 +1,162 @@
+<p-card>
+    <div class="grid">
+        <div class="col-12 md:col-5 lg:col-5">
+            <div class="formgrid grid">
+
+                <div class="field col-12 md:col-12">
+                    <label for="namePlan">Nome do Plano</label>
+                    <input id="namePlan" type="text" class="text-base text-color surface-overlay p-1 border-1 border-solid surface-border border-round-sm appearance-none outline-none focus:border-primary w-full">
+                </div>
+
+                <div class="field col-12 md:col-6">
+                    <label for="valueBRL">Valor 1</label>
+                    <input id="valueBRL" type="text" class="text-base text-color surface-overlay p-1 border-1 border-solid surface-border border-round-sm appearance-none outline-none focus:border-primary w-full">
+                </div>
+
+                <div class="field col-12 md:col-5">
+                    <label for="period">Periodicidade</label>
+                    <p-dropdown [options]="periodos" [(ngModel)]="selectedPeriodos" optionLabel="name"></p-dropdown>
+                    
+                </div>
+
+                <div class="field col-12 md:col">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="pi-minus-circle inline-block">
+                        <path id="ic_menos" d="M12.563.563a12,12,0,1,0,12,12A12,12,0,0,0,12.563.563ZM6.175,14.5a.582.582,0,0,1-.581-.581v-2.71a.582.582,0,0,1,.581-.581H18.95a.582.582,0,0,1,.581.581v2.71a.582.582,0,0,1-.581.581Z" transform="translate(-0.563 -0.563)" fill="#ff3030"/>
+                    </svg>
+                </div>
+
+                <div class="field col-12 md:col-6">
+                    <label for="valueBRL2">Valor 2</label>
+                    <input id="valueBRL2" type="text" class="text-base text-color surface-overlay p-1 border-1 border-solid surface-border border-round-sm appearance-none outline-none focus:border-primary w-full">
+                </div>
+
+                <div class="field col-12 md:col-5">
+                    <label for="period">Periodicidade</label>
+                    <p-dropdown [options]="periodos" [(ngModel)]="selectedPeriodos" optionLabel="name"></p-dropdown>
+                    
+                </div>
+
+                <div class="field col-12 md:col">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="pi-minus-circle inline-block">
+                        <path id="ic_menos" d="M12.563.563a12,12,0,1,0,12,12A12,12,0,0,0,12.563.563ZM6.175,14.5a.582.582,0,0,1-.581-.581v-2.71a.582.582,0,0,1,.581-.581H18.95a.582.582,0,0,1,.581.581v2.71a.582.582,0,0,1-.581.581Z" transform="translate(-0.563 -0.563)" fill="#ff3030"/>
+                    </svg>
+                      
+                </div>
+
+                <div class="field col-12 md:col-6">
+                    <label for="valueBRL3">Valor 3</label>
+                    <input id="valueBRL3" type="text" class="text-base text-color surface-overlay p-1 border-1 border-solid surface-border border-round-sm appearance-none outline-none focus:border-primary w-full">
+                </div>
+
+                <div class="field col-12 md:col-5">
+                    <label for="period">Periodicidade</label>
+                    <p-dropdown [options]="periodos" [(ngModel)]="selectedPeriodos" optionLabel="name"></p-dropdown>
+                    
+                </div>
+
+                <div class="field col-12 md:col">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="pi-minus-circle inline-block">
+                        <path id="ic_mais" d="M12.563.563a12,12,0,1,0,12,12A12,12,0,0,0,12.563.563ZM19.53,13.917a.582.582,0,0,1-.581.581H14.5V18.95a.582.582,0,0,1-.581.581h-2.71a.582.582,0,0,1-.581-.581V14.5H6.175a.582.582,0,0,1-.581-.581v-2.71a.582.582,0,0,1,.581-.581h4.452V6.175a.582.582,0,0,1,.581-.581h2.71a.582.582,0,0,1,.581.581v4.452H18.95a.582.582,0,0,1,.581.581Z" transform="translate(-0.563 -0.563)"/>
+                    </svg>
+                      
+                </div>
+
+                <div class="field col-12 md:col-12">
+                    <div class="flex justify-content-end align-items-center">
+                        <span class="text-plus-value font-bold">+ Acrescentar valor</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-12 md:col lg:col" [style]="{'flex-grow': '0.5'}"> </div>
+
+        <div class="col-12 md:col-6 lg:col-6">
+            <div class="field col-12">
+                <label for="description">Descrição</label>
+                <textarea id="description" type="text" rows="10" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="grid">
+        <div class="col-12 md:col-5 lg:col-5">
+            <div class="formgrid grid">
+
+                <div class="field col-12 md:col-12">
+                    <label for="period">Vantagens</label>
+                    <div class="flex ">
+                        <input id="valueBRL2" type="text" class="text-base text-color surface-overlay p-1 border-1 border-solid surface-border border-round-sm appearance-none outline-none focus:border-primary w-full">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="ml-2">
+                            <path id="ic_menos" d="M12.563.563a12,12,0,1,0,12,12A12,12,0,0,0,12.563.563ZM6.175,14.5a.582.582,0,0,1-.581-.581v-2.71a.582.582,0,0,1,.581-.581H18.95a.582.582,0,0,1,.581.581v2.71a.582.582,0,0,1-.581.581Z" transform="translate(-0.563 -0.563)" fill="#ff3030"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="field col-12 md:col-12">
+                    <div class="flex ">
+                        <input id="valueBRL2" type="text" class="text-base text-color surface-overlay p-1 border-1 border-solid surface-border border-round-sm appearance-none outline-none focus:border-primary w-full">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="ml-2">
+                            <path id="ic_menos" d="M12.563.563a12,12,0,1,0,12,12A12,12,0,0,0,12.563.563ZM6.175,14.5a.582.582,0,0,1-.581-.581v-2.71a.582.582,0,0,1,.581-.581H18.95a.582.582,0,0,1,.581.581v2.71a.582.582,0,0,1-.581.581Z" transform="translate(-0.563 -0.563)" fill="#ff3030"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="field col-12 md:col-12">
+                    <div class="flex ">
+                        <input id="valueBRL2" type="text" class="text-base text-color surface-overlay p-1 border-1 border-solid surface-border border-round-sm appearance-none outline-none focus:border-primary w-full">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="ml-2">
+                            <path id="ic_mais" d="M12.563.563a12,12,0,1,0,12,12A12,12,0,0,0,12.563.563ZM19.53,13.917a.582.582,0,0,1-.581.581H14.5V18.95a.582.582,0,0,1-.581.581h-2.71a.582.582,0,0,1-.581-.581V14.5H6.175a.582.582,0,0,1-.581-.581v-2.71a.582.582,0,0,1,.581-.581h4.452V6.175a.582.582,0,0,1,.581-.581h2.71a.582.582,0,0,1,.581.581v4.452H18.95a.582.582,0,0,1,.581.581Z" transform="translate(-0.563 -0.563)"/>
+                        </svg>
+                    </div>
+                </div>
+
+            
+            </div>
+        </div>
+
+
+        <div class="col-12 md:col-4 lg:col-4 lg:col-offset-1">
+            <div class="formgrid grid">
+
+                <div class="field col-12 md:col-12">
+                    <label for="period">Formas de Pagamento</label>
+                    <div class="flex ">
+                        <input id="valueBRL2" type="text" class="text-base text-color surface-overlay p-1 border-1 border-solid surface-border border-round-sm appearance-none outline-none focus:border-primary w-full">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="ml-2">
+                            <path id="ic_menos" d="M12.563.563a12,12,0,1,0,12,12A12,12,0,0,0,12.563.563ZM6.175,14.5a.582.582,0,0,1-.581-.581v-2.71a.582.582,0,0,1,.581-.581H18.95a.582.582,0,0,1,.581.581v2.71a.582.582,0,0,1-.581.581Z" transform="translate(-0.563 -0.563)" fill="#ff3030"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="field col-12 md:col-12">
+                    <div class="flex ">
+                        <input id="valueBRL2" type="text" class="text-base text-color surface-overlay p-1 border-1 border-solid surface-border border-round-sm appearance-none outline-none focus:border-primary w-full">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="ml-2">
+                            <path id="ic_menos" d="M12.563.563a12,12,0,1,0,12,12A12,12,0,0,0,12.563.563ZM6.175,14.5a.582.582,0,0,1-.581-.581v-2.71a.582.582,0,0,1,.581-.581H18.95a.582.582,0,0,1,.581.581v2.71a.582.582,0,0,1-.581.581Z" transform="translate(-0.563 -0.563)" fill="#ff3030"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <div class="field col-12 md:col-12">
+                    <div class="flex ">
+                        <input id="valueBRL2" type="text" class="text-base text-color surface-overlay p-1 border-1 border-solid surface-border border-round-sm appearance-none outline-none focus:border-primary w-full">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="ml-2">
+                            <path id="ic_mais" d="M12.563.563a12,12,0,1,0,12,12A12,12,0,0,0,12.563.563ZM19.53,13.917a.582.582,0,0,1-.581.581H14.5V18.95a.582.582,0,0,1-.581.581h-2.71a.582.582,0,0,1-.581-.581V14.5H6.175a.582.582,0,0,1-.581-.581v-2.71a.582.582,0,0,1,.581-.581h4.452V6.175a.582.582,0,0,1,.581-.581h2.71a.582.582,0,0,1,.581.581v4.452H18.95a.582.582,0,0,1,.581.581Z" transform="translate(-0.563 -0.563)"/>
+                        </svg>
+                    </div>
+                </div>
+
+            
+            </div>
+        </div>
+    </div>
+</p-card>

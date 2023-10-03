@@ -1,0 +1,28 @@
+.p-datatable .p-datatable-thead > tr > th{
+    background-color: $bg-white;
+    font: normal normal bold 14px/19px Segoe UI;
+    color: $color-black;
+}
+
+
+.p-datatable .p-datatable-tbody > tr > td{
+    color: #4E5066;
+    font: normal normal normal 14px/18px Segoe UI;
+    padding: 1.5rem 1rem;
+}
+
+.p-paginator {
+    padding: 2.5rem 1rem;
+    .p-paginator-pages .p-paginator-page.p-highlight {
+        background: #707070;
+        font: normal normal normal 14px/25px Segoe UI;
+        color: #fff;
+        border-radius: 20px;
+        min-width: 1.8rem;
+        height: 1.8rem;
+    }
+    .p-dropdown .p-dropdown-label{
+        font: normal normal normal 16px/20px Segoe UI;
+    
+    }
+}

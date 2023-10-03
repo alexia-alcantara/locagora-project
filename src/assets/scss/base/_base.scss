@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 1rem;
+}
+
+body{
+    height: 100vh;
+    
+}
+
+::placeholder{
+    color: $color-placeholder;
+    font: normal normal normal 15px/18px Segoe UI;
+}

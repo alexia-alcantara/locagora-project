@@ -1,0 +1,86 @@
+<div class="min-h-screen flex">
+    <div id="app-sidebar-1" class="bg-white h-screen hidden lg:block flex-shrink-0 absolute left-0 top-0 z-1  border-gray-800 w-18rem lg:w-6rem select-none">
+        <div class="flex flex-column h-full">
+            <div class="flex align-items-center justify-content-center flex-shrink-0 w-10rem" style="height:60px">
+                <img src="assets/images/logos/im_cabecalho_site.png" alt="logo-cabecalho" height="30" > 
+            </div>
+            <div class=" select-none mt-7">
+                
+                <ul class="list-menu list-none p-3 lg:py-3 lg:px-2 m-0 border-0" >
+                    <li>
+                        <a pRipple class="flex flex-wrap lg:justify-content-center cursor-pointer p-3 hover:bg-gray-800 border-round  hover:text-white transition-duration-150 transition-colors">
+                            <img src="assets/images/logos/im_logo.svg" alt="logo-menu" [style]="{'width': '3.5rem'}">
+                        </a>
+                    </li>
+                    <li>
+                        <a pRipple class="flex flex-wrap lg:justify-content-center cursor-pointer p-3 hover:bg-gray-800 border-round  hover:text-white transition-duration-150 transition-colors">
+                            <img src="assets/images/ic_menu_contratos.svg" alt="" class="mr-2 lg:mr-0 text-base lg:text-xl">
+                            <span class="font-medium inline " routerLink="/contatos">Contatos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a pRipple class="flex flex-wrap lg:justify-content-center cursor-pointer p-3 hover:bg-gray-800 border-round  hover:text-white transition-duration-150 transition-colors">
+                            <img src="assets/images/ic_menu_usuarios.svg" alt="" class="mr-2 lg:mr-0 text-base lg:text-xl">
+                            <span class="font-medium inline " routerLink="/usuarios">Usuários</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a pRipple class="flex flex-wrap lg:justify-content-center cursor-pointer p-3 hover:bg-gray-800 border-round  hover:text-white transition-duration-150 transition-colors">
+                            <img src="assets/images/ic_menu_planos.svg" alt="" class="mr-2 lg:mr-0 text-base lg:text-xl">
+                            <span class="font-medium inline " routerLink="/planos">Planos</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a pRipple class="flex flex-wrap lg:justify-content-center cursor-pointer p-3 hover:bg-gray-800 border-round  hover:text-white transition-duration-150 transition-colors">
+                            <img src="assets/images/ic_menu_lojas.svg" alt="" class="mr-2 lg:mr-0 text-base lg:text-xl">
+                            <span class="font-medium inline " routerLink="/lojas">Lojas</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a pRipple class="flex flex-wrap lg:justify-content-center cursor-pointer p-3 hover:bg-gray-800 border-round  hover:text-white transition-duration-150 transition-colors">
+                            <img src="assets/images/ic_menu_usuarios.svg" alt="" class="mr-2 lg:mr-0 text-base lg:text-xl">
+                            <span class="font-medium inline ">Notificações</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a pRipple class="flex flex-wrap lg:justify-content-center cursor-pointer p-3 hover:bg-gray-800 border-round  hover:text-white transition-duration-150 transition-colors">
+                            <img src="assets/images/ic_menu_sair.svg" alt="" class="mr-2 lg:m-1 text-base lg:text-xl ">
+                            <span class="font-medium ">Sair</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+           
+        </div>
+    </div>
+    <div class="min-h-screen flex flex-column relative flex-auto">
+        <div class="flex justify-content-center align-items-center px-5 surface-section relative lg:static border-bottom-0 surface-border" style="height:60px">
+            <div class="flex justify-content-center">
+               <img src="../../../assets/images/ic_menu_contratos.svg" alt="">
+               <span class="ml-4 font-bold">Contatos</span>
+            </div>
+            <a pRipple class="cursor-pointer block lg:hidden text-700" pStyleClass="@next" enterClass="hidden" enterActiveClass="fadein" leaveToClass="hidden" leaveActiveClass="fadeout" [hideOnOutsideClick]="true">
+                <i class="pi pi-ellipsis-v text-2xl "></i>
+            </a>
+           
+        </div>
+        <div class="w-100 border-top-1 border-right-1 border-bottom-1 surface-border bg-white z-1" style="height: 60px;">
+            <div class="flex justify-content-start my-2 mx-2">
+                <a pRipple class="cursor-pointer inline-flex align-items-center justify-content-center lg:hidden text-700 mr-3" pStyleClass="#app-sidebar-1" enterClass="hidden" enterActiveClass="fadeinleft" leaveToClass="hidden" leaveActiveClass="fadeoutleft" [hideOnOutsideClick]="true">
+                    <i class="pi pi-bars text-4xl"></i>
+                </a>
+                <span class="p-input-icon-left">
+                    <i class="pi pi-search"></i>
+                    <input type="text" pInputText class="border-none w-10rem sm:w-20rem" placeholder="Pesquisar">
+                </span>
+            </div>
+        </div>
+        <div class="flex flex-column flex-auto">
+            <div class="py-4 flex flex-column flex-auto" [style]="{'padding-left': '7rem'}">
+                <div class="surface-border border-round bg-home flex-auto p-4">
+                  <router-outlet></router-outlet>
+                </div>
+              </div>
+        </div>
+    </div>
+</div>
