@@ -8,6 +8,7 @@ import { PlanosComponent } from './pages/planos/planos.component';
 import { PlanosDetalheComponent } from './pages/planos/planos-detalhe/planos-detalhe.component';
 import { LojasComponent } from './pages/lojas/lojas.component';
 import { LojasDetalheComponent } from './pages/lojas/lojas-detalhe/lojas-detalhe.component';
+import { NotificacoesComponent } from './pages/notificacoes/notificacoes.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
@@ -19,7 +20,8 @@ const routes: Routes = [
       {path: 'planos', component: PlanosComponent},
       {path: 'planos/detalhe-plano', component: PlanosDetalheComponent},
       {path: 'lojas', component: LojasComponent},
-      {path: 'lojas/detalhe-loja', component: LojasDetalheComponent}
+      {path: 'lojas/detalhe-loja', component: LojasDetalheComponent},
+      {path: 'notificacoes', component: NotificacoesComponent}
   ]}
 
 ];

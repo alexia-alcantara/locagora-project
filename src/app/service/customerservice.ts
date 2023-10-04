@@ -44,55 +44,8 @@ export class CustomerService {
                 address: 'Endereço em 2 linhas',
                 planName: 'Nome do Plano',
                 status: 'unqualified',
-            },
-            {
-                name: 'James Butt',
-                email: 'email@email.com',
-                telephone: '(31) 99999-9999',
-                address: 'Endereço em 2 linhas',
-                planName: 'Nome do Plano',
-                status: 'unqualified',
-            },
-            {
-                name: 'James Butt',
-                email: 'email@email.com',
-                telephone: '(31) 99999-9999',
-                address: 'Endereço em 2 linhas',
-                planName: 'Nome do Plano',
-                status: 'unqualified',
-            },
-            {
-                name: 'James Butt',
-                email: 'email@email.com',
-                telephone: '(31) 99999-9999',
-                address: 'Endereço em 2 linhas',
-                planName: 'Nome do Plano',
-                status: 'unqualified',
-            },
-            {
-                name: 'James Butt',
-                email: 'email@email.com',
-                telephone: '(31) 99999-9999',
-                address: 'Endereço em 2 linhas',
-                planName: 'Nome do Plano',
-                status: 'unqualified',
-            },
-            {
-                name: 'James Butt',
-                email: 'email@email.com',
-                telephone: '(31) 99999-9999',
-                address: 'Endereço em 2 linhas',
-                planName: 'Nome do Plano',
-                status: 'unqualified',
-            },
-            {
-                name: 'Nome do Contato',
-                email: 'email@email.com',
-                telephone: '31-93658-9696',
-                address: 'Benton, John B Jr',
-                planName: 'Nome do Plano',
-                status: 'unqualified',
-            },
+            }
+           
            
         ];
     }

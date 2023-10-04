@@ -1,0 +1,39 @@
+<p-card>
+    <div class="col-12">
+        <div class="field col-12 xl:col-4">
+            <label for="users">Para quem</label>
+            <p-dropdown [options]="dropUser" [(ngModel)]="selectedUsers" optionLabel="name"></p-dropdown>
+        </div>
+    </div>
+
+    <div class="col-12">
+        <div class="field col-12 xl:col-10">
+            <label>Texto da Mensagem</label>
+            <textarea id="message" type="text" rows="8" placeholder="Texto livre" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"></textarea>
+        </div>
+    </div>
+
+    <div class="col-8">
+        <div class="field col-12 xl:col-8">
+            <label>Anexar Imagem</label>
+         
+            <div class="file-input" >
+                <input type="file" id="upload" class="custom-file-input p-button-file" (change)="onFileSelect($event)" accept="image/*">
+
+             </div>
+
+            <p-image alt="Image" width="250" [preview]="true" [src]="selectedImageUrl"></p-image>
+
+            <!-- <button (click)="clearImage()">Clear Image</button> -->
+
+            <div class="field col-12 xl:col-10">
+                <div class="flex gap-3 pt-4 justify-content-center">
+                    <p-button label="Cancelar" styleClass="p-button-danger" icon="pi pi-times"></p-button>
+
+                    <p-button label="Salvar" styleClass="p-button-save" icon="pi pi-send"></p-button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</p-card>

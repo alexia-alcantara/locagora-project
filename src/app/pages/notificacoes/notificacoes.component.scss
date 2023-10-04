@@ -1,0 +1,57 @@
+@import '../../../assets/scss/abstracts/variables';
+
+.field > label{
+    font: normal normal normal 16px/24px Segoe UI;
+    color: #37322C;
+}
+.file-input{
+    .custom-file-input {
+
+        :host ::ng-deep .p-button-file{
+            border-radius: 4px;
+            width: 7rem;
+            height: 2.3rem;
+            background: #2196F3;
+            border-color: #2196F3;
+        }
+        padding: 5px;
+        color: #999;
+        vertical-align: middle;
+        width: 100%;
+
+        &::-webkit-file-upload-button {
+            visibility: hidden;
+        }
+
+        &::before {
+            content: 'Selecione';
+            color: $bg-white;
+            display: inline-block;
+            background: $color-blue-btn-save;
+            border-radius: 3px;
+            margin: -3px 0 10px -5px;
+            padding: 9px 20px;
+            white-space: nowrap;
+            -webkit-user-select: none;
+            cursor: pointer;
+            text-align: center;
+            font: normal normal normal 14px/18px Lato;
+            height: 35px;
+        }
+
+        &:hover::before {
+            border-color: black;
+          }
+        &:active {
+            outline: 0;
+          }
+        &:active::before {
+            background: -webkit-linear-gradient(top, #e3e3e3, #f9f9f9); 
+          }
+
+      }
+}  
+
+:host ::ng-deep .p-image-preview-container{
+    right: 0.7rem;
+}
