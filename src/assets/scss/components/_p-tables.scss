@@ -1,8 +1,11 @@
-.p-datatable .p-datatable-thead > tr > th{
-    background-color: $bg-white;
-    font: normal normal bold 14px/19px Segoe UI;
-    color: $color-black;
+.p-datatable{
+    .p-datatable-thead > tr > th{
+        background-color: $bg-white;
+        font: normal normal bold 14px/19px Segoe UI;
+        color: $color-black;
+    }
 }
+
 
 
 .p-datatable .p-datatable-tbody > tr > td{
@@ -24,5 +27,12 @@
     .p-dropdown .p-dropdown-label{
         font: normal normal normal 16px/20px Segoe UI;
     
+    }
+}
+
+@media screen and (min-height: 900px) {
+    .p-datatable {
+        max-height: 70vh;
+        overflow: auto;
     }
 }

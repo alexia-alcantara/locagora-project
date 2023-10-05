@@ -44,9 +44,32 @@ export class CustomerService {
                 address: 'Endereço em 2 linhas',
                 planName: 'Nome do Plano',
                 status: 'unqualified',
-            }
-           
-           
+            },
+            {
+                name: 'James Butt',
+                email: 'email@email.com',
+                telephone: '(31) 99999-9999',
+                address: 'Endereço em 2 linhas',
+                planName: 'Nome do Plano',
+                status: 'unqualified',
+            },
+            {
+                name: 'James Butt',
+                email: 'email@email.com',
+                telephone: '(31) 99999-9999',
+                address: 'Endereço em 2 linhas',
+                planName: 'Nome do Plano',
+                status: 'unqualified',
+            },
+            {
+                name: 'James Butt',
+                email: 'email@email.com',
+                telephone: '(31) 99999-9999',
+                address: 'Endereço em 2 linhas',
+                planName: 'Nome do Plano',
+                status: 'unqualified',
+            },
+    
         ];
     }
 
@@ -103,7 +126,16 @@ export class CustomerService {
                 actions: ""
             },
             {
-                name: "Nome do Usuário",
+                name: "Nome do Usuário 2",
+                responsible: "Nome do Responsável",
+                email: "email@email.com.br",
+                telephone: "(31) 99999-9999",
+                city: "Cidade",
+                uf: "UF",
+                actions: ""
+            },
+            {
+                name: "Nome do Usuário 3",
                 responsible: "Nome do Responsável",
                 email: "email@email.com.br",
                 telephone: "(31) 99999-9999",
@@ -147,6 +179,7 @@ export class CustomerService {
                 uf: "UF",
                 actions: ""
             },
+
             {
                 name: "Nome do Usuário",
                 responsible: "Nome do Responsável",
@@ -156,6 +189,8 @@ export class CustomerService {
                 uf: "UF",
                 actions: ""
             },
+
+        
         ]
     }
 

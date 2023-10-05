@@ -49,3 +49,10 @@
         // background-color: $color-light;
     }
 }
+
+
+@media screen and (max-height: 760px) {
+    #app-sidebar-1 {
+        height: 144vh !important;
+    }
+}
