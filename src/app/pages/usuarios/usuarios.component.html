@@ -1,18 +1,26 @@
-<p-table [value]="users" [tableStyle]="{ 'min-width': '50rem' }">
-    <ng-template pTemplate="header">
-        <tr>
-            <th>Nome do Usuário</th>
-            <th>E-mail</th>
-            <th>Telefone</th>
-            <th>Ação</th>
-        </tr>
-    </ng-template>
-    <ng-template pTemplate="body" let-users>
-        <tr>
-            <td>{{ users.name }}</td>
-            <td>{{ users.email }}</td>
-            <td>{{ users.telephone }}</td>
-            <td>{{ users.action }}</td>
-        </tr>
-    </ng-template>
-</p-table>
+<p-card>
+    <p-table [value]="users" [tableStyle]="{ 'min-width': '50rem' }"
+    [paginator]="true" [rows]="9" [rowsPerPageOptions]="[10, 20, 30]">
+        <ng-template pTemplate="header">
+            <tr>
+                <th>Nome do Usuário</th>
+                <th>E-mail</th>
+                <th>Telefone</th>
+                <th>Ação</th>
+                <th [style]="{'text-align': 'end', 'width': '11.9rem'}">
+                    <button pButton pRipple label="Adicionar Usuário" icon="pi pi-plus" routerLink="./editar-usuario" class="p-button p-button-principal p-button-rounded" ></button>
+                </th>
+            </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-users>
+            <tr>
+                <td>{{ users.name }}</td>
+                <td>{{ users.email }}</td>
+                <td>{{ users.telephone }}</td>
+                <td>{{ users.action }}</td>
+            <td></td>
+
+            </tr>
+        </ng-template>
+    </p-table>
+</p-card>

@@ -26,6 +26,7 @@ import { ImageModule } from 'primeng/image';
 import { InputTextModule } from 'primeng/inputtext';
 import { StyleClassModule } from 'primeng/styleclass';
 import { TableModule } from 'primeng/table';
+import { DetalheUsuarioComponent } from './pages/usuarios/detalhe-usuario/detalhe-usuario.component';
 
 
 
@@ -42,7 +43,8 @@ import { TableModule } from 'primeng/table';
     PlanosDetalheComponent,
     LojasComponent,
     LojasDetalheComponent,
-    NotificacoesComponent
+    NotificacoesComponent,
+    DetalheUsuarioComponent
   ],
   imports: [
     BrowserModule,

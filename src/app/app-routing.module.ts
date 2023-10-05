@@ -9,6 +9,7 @@ import { PlanosDetalheComponent } from './pages/planos/planos-detalhe/planos-det
 import { LojasComponent } from './pages/lojas/lojas.component';
 import { LojasDetalheComponent } from './pages/lojas/lojas-detalhe/lojas-detalhe.component';
 import { NotificacoesComponent } from './pages/notificacoes/notificacoes.component';
+import { DetalheUsuarioComponent } from './pages/usuarios/detalhe-usuario/detalhe-usuario.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
@@ -17,11 +18,13 @@ const routes: Routes = [
     children: [
       {path: 'contatos', component: ContatosComponent},
       {path: 'usuarios', component: UsuariosComponent},
+      {path: 'usuarios/editar-usuario', component: DetalheUsuarioComponent},
       {path: 'planos', component: PlanosComponent},
       {path: 'planos/detalhe-plano', component: PlanosDetalheComponent},
       {path: 'lojas', component: LojasComponent},
       {path: 'lojas/detalhe-loja', component: LojasDetalheComponent},
-      {path: 'notificacoes', component: NotificacoesComponent}
+      {path: 'notificacoes', component: NotificacoesComponent},
+      
   ]}
 
 ];

@@ -35,6 +35,16 @@
        
     }
 
+    .icon-back{
+        position: relative;
+        left: 7.5rem;
+
+        span{
+            font: normal normal normal 16px/23px Segoe UI;
+            color: $color-black;
+        }
+    }
+
     .bg-home{
         // background-color: $color-light;
     }
