@@ -1,6 +1,4 @@
 import { Injectable } from "@angular/core";
-import { NavigationEnd, Router } from "@angular/router";
-import { BehaviorSubject } from "rxjs";
 
 
 @Injectable({
@@ -8,15 +6,12 @@ import { BehaviorSubject } from "rxjs";
   })
 
 export class ShowRouterService{
-    public showComponentsSubject = new BehaviorSubject<boolean>(true);
-    showComponents$ = this.showComponentsSubject.asObservable();
+    private rotasDetalhes: string[] = ['/usuarios/editar-usuario', '/lojas/detalhe-loja', '/planos/detalhe-plano'];
 
-    constructor(private router: Router){
-        this.router.events.subscribe((event) =>{
-            if(event instanceof NavigationEnd){
-                this.showComponentsSubject.next(!event.url.includes('/'))
-            }
-        })
+    showIcons: boolean = true;
+
+    atualizarExibicaoIcone(url: string) {
+        this.showIcons = !this.rotasDetalhes.some(rotaDetalhe => url.includes(rotaDetalhe));
     }
 
 }

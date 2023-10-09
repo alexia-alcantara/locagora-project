@@ -16,17 +16,19 @@ import { PlanosDetalheComponent } from './pages/planos/planos-detalhe/planos-det
 import { LojasComponent } from './pages/lojas/lojas.component';
 import { LojasDetalheComponent } from './pages/lojas/lojas-detalhe/lojas-detalhe.component';
 import { NotificacoesComponent } from './pages/notificacoes/notificacoes.component';
+import { DetalheUsuarioComponent } from './pages/usuarios/detalhe-usuario/detalhe-usuario.component';
+
 
 // PrimeNG
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
+import { DialogModule } from 'primeng/dialog';
 import { DropdownModule } from 'primeng/dropdown';
 import { FileUploadModule } from 'primeng/fileupload';
 import { ImageModule } from 'primeng/image';
 import { InputTextModule } from 'primeng/inputtext';
 import { StyleClassModule } from 'primeng/styleclass';
 import { TableModule } from 'primeng/table';
-import { DetalheUsuarioComponent } from './pages/usuarios/detalhe-usuario/detalhe-usuario.component';
 
 
 
@@ -52,6 +54,7 @@ import { DetalheUsuarioComponent } from './pages/usuarios/detalhe-usuario/detalh
     BrowserAnimationsModule,
     ButtonModule,
     CardModule,
+    DialogModule,
     DropdownModule,
     FileUploadModule,
     FormsModule,

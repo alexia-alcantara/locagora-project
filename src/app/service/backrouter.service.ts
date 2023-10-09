@@ -1,16 +1,23 @@
 import { Injectable } from '@angular/core';
+import { NavigationEnd, Router } from '@angular/router';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RouteService {
-  private backRoute: { [rota: string]: string } = {
-    '/usuarios/editar-usuario': '/usuarios',
-    '/planos/detalhe-plano': '/planos',
-    '/lojas/detalhe-loja': '/lojas'
-  };
+  private previousUrl: string = '';
+  private currentUrl: string = '';
 
-  getBackRoute(currentRoute: string): string {
-    return this.backRoute[currentRoute] || '/';
+  constructor(private router: Router) {
+    router.events.subscribe((event) => {
+      if (event instanceof NavigationEnd) {
+        this.previousUrl = this.currentUrl;
+        this.currentUrl = event.url;
+      }
+    });
+  }
+
+  getPreviousUrl(): string {
+    return this.previousUrl;
   }
 }

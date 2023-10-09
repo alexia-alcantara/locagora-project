@@ -1,21 +1,24 @@
 <div class="boxLogin">
     <div class="flex justify-content-center align-items-center flex-row h-screen">
-        <div class="surface-card p-5 border-round border-round-3xl w-25rem h-26rem">
-            <i class="pi pi-compass"></i>
+        <div class="surface-card p-6 border-round border-round-3xl w-28rem">
+            <img src="../../../assets/images/logos/im_logo.svg" alt="icon-locagora" class="icon">
 
+           <div class="lg:col-12 text-center">
+            <img src="../../../assets/images/im_texto.svg" alt="logo" class="pt-5">
+           </div>
             <div class="formgrid grid">
-                <div class="field col-12 md:col-12">
+                <div class="field md:col-12">
                     <label for="user">Usuário</label>
                     <input id="user" type="text" placeholder="name@domain.com" class="text-base surface-overlay p-2 border-1 border-solid border-round appearance-none outline-none focus:border-primary w-full">
                 </div>
-                <div class="field col-12 md:col-12">
+                <div class="field md:col-12">
                     <label for="password">Senha</label>
                     <input id="password" type="password" placeholder="******" class="text-base surface-overlay p-2 border-1 border-solid border-round appearance-none outline-none focus:border-primary w-full">
                 </div>
 
                 <div class="field mt-3 text-center col-12 md:col-12">
                     <div class="flex flex-wrap justify-content-between align-items-center">
-                        <a href="">Esqueci minha senha</a>
+                        <a (click)="showDialog()" class="cursor-pointer">Esqueci minha senha</a>
                         <button pButton pRipple label="Entrar" class="p-button p-button-principal" routerLink="/contatos"></button>
                     </div>
                     
@@ -26,3 +29,32 @@
     </div>
 </div>
     
+
+<!-- Modal recuperação de senha -->
+<p-dialog [(visible)]="visible" [modal]="true" [style]="{ width: '34vw' }" [draggable]="false" [resizable]="false">
+    
+    <ng-template pTemplate="header">
+        <span class="text-xl font-bold mx-auto">Informe seu e-mail</span>
+    </ng-template>
+   
+    <div class="formgrid grid">
+        <div class="field md:col-12">
+            <label for="e-mail">E-mail</label>
+            <input id="email" type="email" placeholder="name@domain.com" class="text-base surface-overlay p-2 border-1 border-solid border-round appearance-none outline-none focus:border-primary w-full">
+        </div>
+
+    </div>
+
+    <ng-template pTemplate="footer">
+        <div class="field mt-3 text-center col-12 md:col-12">
+            <div class="flex flex-wrap justify-content-center align-items-center gap-4">
+                <p-button label="Recuperar Senha" styleClass="p-button-save"></p-button>
+                <p-button label="Cancelar" styleClass="p-button-danger" icon="pi pi-times"></p-button>
+
+            </div>
+        </div>
+    </ng-template>
+
+
+    
+</p-dialog>

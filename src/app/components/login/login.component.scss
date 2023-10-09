@@ -8,11 +8,11 @@
     .surface-card{
         box-shadow: 0px 3px 6px #00000029;
     
-        .pi-compass{
-            position: relative;
-            left: 45%;
-            bottom: 3rem;
-            font-size: 3rem
+        .icon{
+            position: absolute;
+            left: 46%;
+            top: 11rem;
+            width: 7rem;
         }
         
         .p-button-principal{
@@ -31,3 +31,22 @@
         
     }
 }
+
+:host ::ng-deep .p-dialog{
+    .p-dialog-footer {
+        .p-button-save{
+            width: 100%;
+        }
+        .p-button.p-button-danger{
+            width: 9.5rem;
+
+        }
+    }
+
+    .p-dialog-content{
+        padding: 0 1.5rem 1rem 1.5rem;
+    }
+
+}
+
+

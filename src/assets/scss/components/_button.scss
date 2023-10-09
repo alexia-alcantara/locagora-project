@@ -2,9 +2,13 @@
     border-radius: 3rem;
     background-color: $color-black;
     border-color: $color-black;
-
 }
 
+
+.p-button-principal:enabled:hover{
+    background-color: #1f2429;
+    border-color: #101010f0;
+}
 .p-button-label{
     font-family: Poppins;
     font-weight: 400;
