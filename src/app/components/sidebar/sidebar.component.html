@@ -89,10 +89,10 @@
                         <span class="font-medium inline color-active" routerLinkActive="active">Notificações</span>
                     </a>
                 </li>
-                <li routerLinkActive="active">
+                <li routerLinkActive="active" (click)="exit()">
                     <a pRipple class="flex flex-wrap lg:justify-content-center cursor-pointer p-3 border-round  transition-duration-150 transition-colors">
                         <img src="assets/images/ic_menu_sair.svg" alt="icon-sair" class="mr-2 lg:m-1 text-base lg:text-xl" routerLinkActive="active">
-                        <span class="font-medium" (click)="exit()">Sair</span>
+                        <span class="font-medium" >Sair</span>
                     </a>
                 </li>
             </ul>

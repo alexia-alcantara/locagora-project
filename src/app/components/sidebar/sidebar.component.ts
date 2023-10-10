@@ -60,7 +60,7 @@ export class SidebarComponent {
 
 
   exit() {
-    this.router.navigate(['login']);
+    this.router.navigate(['/login']);
   }
 
 

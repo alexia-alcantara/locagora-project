@@ -18,19 +18,22 @@
             <label>Anexar Imagem</label>
          
             <div class="file-input" >
-                <input type="file" id="upload" class="custom-file-input p-button-file" (change)="onFileSelect($event)" accept="image/*">
+                <div class="flex">
+                    <input type="file" id="upload" class="custom-file-input p-button-file" (change)="onFileSelect($event)" accept="image/*">
+                    <p-button styleClass="p-button-save" icon="pi pi-times" (click)="clearImage()"></p-button>
 
+                </div>
+             
              </div>
 
-            <p-image alt="Image" width="250" [preview]="true" [src]="selectedImageUrl"></p-image>
+            <p-image [alt]="selectedImageUrl" width="250" [preview]="true" [src]="selectedImageUrl"></p-image>
 
-            <!-- <button (click)="clearImage()">Clear Image</button> -->
 
             <div class="field col-12 xl:col-10">
                 <div class="flex gap-3 pt-4 justify-content-center">
                     <p-button label="Cancelar" styleClass="p-button-danger" icon="pi pi-times"></p-button>
 
-                    <p-button label="Salvar" styleClass="p-button-save" icon="pi pi-send"></p-button>
+                    <p-button label="Enviar" styleClass="p-button-save" icon="pi pi-send"></p-button>
 
                 </div>
             </div>
