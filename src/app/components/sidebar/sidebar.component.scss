@@ -1,7 +1,56 @@
 @import '../../../assets/scss/abstracts/variables';
 
 .min-h-screen{
+    max-width: 100%;
+    position: relative;
     background-color: #EFF3F8;
+
+    .logo-cabecalho{
+        position: relative;
+        z-index: 1101;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+
+
+    .sidebar{
+        position: absolute;
+        width: 100px;
+        padding-top: 95px;
+        height: 100%;
+        background-color: $bg-white;
+
+        .menu-box{
+            margin-top: 0;
+            padding-left: 0;
+            margin-bottom: 70px;
+
+            a{
+                li{
+                    .item-menu{
+                        display: flex;
+                        align-items: center;
+                        gap: 8px;
+                        color: #f4f4f4;
+                        padding: 11px 0;
+                        margin-bottom: 15px;
+                    }
+                }
+            }
+        }
+    }
+
+    .back-sidebar{
+        flex: 0 0 100px;
+        height: 100vh;
+    }
+
+    .main-sub{
+        flex: 1 1 calc(100% - 100px);
+        padding: 0 35.5px;
+        padding-top: 45px;
+        padding-bottom: 50px;
+    }
 
     .list-menu{
         border: 1px solid #00000029;
@@ -44,15 +93,8 @@
             color: $color-black;
         }
     }
-
-    .bg-home{
-        // background-color: $color-light;
-    }
 }
 
-
 @media screen and (max-height: 760px) {
-    #app-sidebar-1 {
-        height: 144vh !important;
-    }
+ 
 }
