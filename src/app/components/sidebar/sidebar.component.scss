@@ -14,9 +14,6 @@
 
 
     .sidebar{
-        position: absolute;
-        width: 100px;
-        padding-top: 95px;
         height: 100%;
         background-color: $bg-white;
 
@@ -46,7 +43,7 @@
     }
 
     .main-sub{
-        flex: 1 1 calc(100% - 100px);
+        flex: 1 1 calc(75% - 100px);
         padding: 0 35.5px;
         padding-top: 45px;
         padding-bottom: 50px;
@@ -61,12 +58,9 @@
                 text-decoration: none;
                 color: $color-black;
     
-                &:active{
-                    color: #00D75C;
-                }
 
                 .color-active.active{
-                    filter: invert(40%) sepia(86%) saturate(375%) hue-rotate(71deg) brightness(106%) contrast(90%);
+                    filter: invert(76%) sepia(39%) saturate(5717%) hue-rotate(97deg) brightness(95%) contrast(101%);
                 }
             }
         
@@ -78,7 +72,7 @@
         }
 
         .color-active.active{
-            filter: invert(40%) sepia(86%) saturate(375%) hue-rotate(71deg) brightness(106%) contrast(90%);
+            filter: invert(76%) sepia(39%) saturate(5717%) hue-rotate(97deg) brightness(95%) contrast(101%);
         }
     
        

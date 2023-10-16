@@ -16,7 +16,7 @@ const routes: Routes = [
   {path: 'login', component: LoginComponent},
   {path: '', component: SidebarComponent,
     children: [
-      {path: 'contatos', component: ContatosComponent},
+      {path: 'contratos', component: ContatosComponent},
       {path: 'usuarios', component: UsuariosComponent},
       {path: 'usuarios/editar-usuario', component: DetalheUsuarioComponent},
       {path: 'planos', component: PlanosComponent},

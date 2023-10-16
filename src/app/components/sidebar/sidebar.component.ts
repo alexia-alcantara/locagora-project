@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ElementRef, ViewChild } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { RouteService } from 'src/app/service/backrouter.service';
 import { ShowRouterService } from 'src/app/service/showrouter.service';
@@ -9,9 +9,10 @@ import { ShowRouterService } from 'src/app/service/showrouter.service';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent {
+  
   titleRoutes: { [rota: string]: { titulo: string, icone: string } } = {
-    '/contatos': { titulo: 'Contatos', icone: '/assets/images/ic_menu_contratos.svg' },
-    '/usuarios': { titulo: 'Usuários', icone: '/assets/images/ic_menu_usuarios.svg' },
+    '/contatos': { titulo: 'Gestão de Contratos', icone: '/assets/images/ic_menu_contratos.svg' },
+    '/usuarios': { titulo: 'Usuários do Sistema', icone: '/assets/images/ic_menu_usuarios.svg' },
     '/lojas': { titulo: 'Lojas', icone: '/assets/images/ic_menu_lojas.svg' },
     '/planos': { titulo: 'Planos', icone: '/assets/images/ic_menu_planos.svg' },
     '/notificacoes': { titulo: 'Notificações', icone: '/assets/images/ic_menu_notificacoes.svg' },
@@ -19,6 +20,8 @@ export class SidebarComponent {
 
   showComponents: boolean = true;
   back: any;
+
+
 
   constructor(
     public showRouterService: ShowRouterService,
@@ -32,7 +35,7 @@ export class SidebarComponent {
 
   getTitle(): string {
     const rotaAtual = this.router.url;
-    return this.titleRoutes[rotaAtual]?.titulo || 'Contratos';
+    return this.titleRoutes[rotaAtual]?.titulo || 'Gestão de Contratos';
   }
 
   getIcon(): string {
