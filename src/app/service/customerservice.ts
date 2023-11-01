@@ -6,7 +6,7 @@ export class CustomerService {
     getData() {
         return [
             {
-                name: 'Nome do Contrato',
+                name: 'Nome do Contato',
                 email: 'email@email.com',
                 telephone: '31-93658-9696',
                 address: 'Benton, John B Jr',

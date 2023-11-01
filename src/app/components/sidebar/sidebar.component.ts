@@ -11,7 +11,7 @@ import { ShowRouterService } from 'src/app/service/showrouter.service';
 export class SidebarComponent {
   
   titleRoutes: { [rota: string]: { titulo: string, icone: string } } = {
-    '/contatos': { titulo: 'Gestão de Contratos', icone: '/assets/images/ic_menu_contratos.svg' },
+    '/contatos': { titulo: 'Lista de Contatos', icone: '/assets/images/ic_menu_contratos.svg' },
     '/usuarios': { titulo: 'Usuários do Sistema', icone: '/assets/images/ic_menu_usuarios.svg' },
     '/lojas': { titulo: 'Lojas', icone: '/assets/images/ic_menu_lojas.svg' },
     '/planos': { titulo: 'Planos', icone: '/assets/images/ic_menu_planos.svg' },
@@ -35,7 +35,7 @@ export class SidebarComponent {
 
   getTitle(): string {
     const rotaAtual = this.router.url;
-    return this.titleRoutes[rotaAtual]?.titulo || 'Gestão de Contratos';
+    return this.titleRoutes[rotaAtual]?.titulo || 'Lista de Contatos';
   }
 
   getIcon(): string {
