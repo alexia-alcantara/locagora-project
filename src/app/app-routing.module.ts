@@ -10,6 +10,8 @@ import { LojasComponent } from './pages/lojas/lojas.component';
 import { LojasDetalheComponent } from './pages/lojas/lojas-detalhe/lojas-detalhe.component';
 import { NotificacoesComponent } from './pages/notificacoes/notificacoes.component';
 import { DetalheUsuarioComponent } from './pages/usuarios/detalhe-usuario/detalhe-usuario.component';
+import { MotosComponent } from './pages/motos/motos.component';
+import { MotosDetalheComponent } from './pages/motos/motos-detalhe/motos-detalhe.component';
 
 const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full'},
@@ -19,6 +21,8 @@ const routes: Routes = [
       {path: 'contratos', component: ContatosComponent},
       {path: 'usuarios', component: UsuariosComponent},
       {path: 'usuarios/editar-usuario', component: DetalheUsuarioComponent},
+      {path: 'motos', component: MotosComponent},
+      {path: 'motos/detalhe-moto', component: MotosDetalheComponent},
       {path: 'planos', component: PlanosComponent},
       {path: 'planos/detalhe-plano', component: PlanosDetalheComponent},
       {path: 'lojas', component: LojasComponent},

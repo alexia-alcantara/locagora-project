@@ -30,7 +30,7 @@
         </div>
     </div>
 
-    <div id="app-sidebar-2" class="sidebar bg-white h-screen hidden lg:block flex-shrink-0 fixed lg:sticky left-0 top-0 z-1 select-none" style="width:225px">
+    <div id="app-sidebar-2" class="sidebar bg-white h-screen hidden lg:block flex-shrink-0 fixed lg:sticky left-0 top-0 z-1 select-none" style="width:233px">
         <aside class="sidebar">
             <nav class="menu-box lg:relative z-1">
                 <ul class="list-menu list-none p-3 lg:py-3 lg:px-2 m-0 border-0 " >
@@ -47,18 +47,61 @@
                             <svg xmlns="http://www.w3.org/2000/svg" width="16.58" height="19.896" viewBox="0 0 16.58 19.896" alt="icon-contratos" class="color-active mr-2 lg:mr-0 text-base lg:text-xl" routerLinkActive="active">
                                 <path id="ic_menu_contratos" d="M17.922,0H4.658V1.658H17.922ZM4.658,19.9H17.922V18.238H4.658ZM17.922,3.316H4.658A1.663,1.663,0,0,0,3,4.974v9.948A1.663,1.663,0,0,0,4.658,16.58H17.922a1.663,1.663,0,0,0,1.658-1.658V4.974A1.663,1.663,0,0,0,17.922,3.316ZM11.29,5.6A1.865,1.865,0,1,1,9.425,7.461,1.868,1.868,0,0,1,11.29,5.6Zm4.145,8.5H7.145V12.849c0-1.384,2.761-2.072,4.145-2.072s4.145.688,4.145,2.072Z" transform="translate(-3)"/>
                             </svg>
-                            <span class="font-medium inline" >Contatos</span>
+                            <span class="font-medium inline" >Gestão de Contratos</span>
                             <i class="pi pi-chevron-down ml-auto"></i>
                         </a>
                         <ul
                           class="list-none py-0 pl-3 pr-0 m-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
                           <li>
-                            <a pRipple class="flex align-items-center justify-content-center cursor-pointer p-3
+                            <a pRipple class="flex align-items-center justify-content-start cursor-pointer p-1
                                 transition-duration-150 transition-colors">
-                              <span class="font-medium inline" routerLinkActive="active" routerLink="/contratos">Gestão de Contratos</span>
+                              <span class="font-medium inline" routerLinkActive="active" routerLink="/contratos">Lista de Contratos</span>
                             </a>
                           </li>
                         </ul>
+                    </li>
+
+                    <li routerLinkActive="active" routerLink="/motos">
+                        <a pRipple class="flex flex-wrap align-items-center cursor-pointer p-3 border-round  transition-duration-150 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22.896" height="18.603" viewBox="0 0 22.896 18.603" alt="icon-planos" class="color-active mr-2 lg:mr-0 text-base lg:text-xl" routerLinkActive="active">
+                                <path id="ic_menu_planos" d="M3.577,17.685H.715A.715.715,0,0,0,0,18.4v2.862a.715.715,0,0,0,.715.715H3.577a.715.715,0,0,0,.715-.715V18.4A.715.715,0,0,0,3.577,17.685Zm0-14.31H.715A.715.715,0,0,0,0,4.09V6.952a.715.715,0,0,0,.715.715H3.577a.715.715,0,0,0,.715-.715V4.09A.715.715,0,0,0,3.577,3.375Zm0,7.155H.715A.715.715,0,0,0,0,11.245v2.862a.715.715,0,0,0,.715.715H3.577a.715.715,0,0,0,.715-.715V11.245A.715.715,0,0,0,3.577,10.53Zm18.6,7.87H7.87a.715.715,0,0,0-.715.715v1.431a.715.715,0,0,0,.715.715H22.18a.715.715,0,0,0,.715-.715V19.116A.715.715,0,0,0,22.18,18.4Zm0-14.31H7.87a.715.715,0,0,0-.715.715V6.237a.715.715,0,0,0,.715.715H22.18a.715.715,0,0,0,.715-.715V4.806A.715.715,0,0,0,22.18,4.09Zm0,7.155H7.87a.715.715,0,0,0-.715.715v1.431a.715.715,0,0,0,.715.715H22.18a.715.715,0,0,0,.715-.715V11.961A.715.715,0,0,0,22.18,11.245Z" transform="translate(0 -3.375)"/>
+                              </svg>
+                              
+                            <span class="font-medium inline color-active" routerLinkActive="active" >Motos</span>
+                        </a>
+                    </li>
+
+                    <li routerLinkActive="active" routerLink="/planos">
+                        <a pRipple class="flex flex-wrap align-items-center cursor-pointer p-3 border-round  transition-duration-150 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22.896" height="18.603" viewBox="0 0 22.896 18.603" alt="icon-planos" class="color-active mr-2 lg:mr-0 text-base lg:text-xl" routerLinkActive="active">
+                                <path id="ic_menu_planos" d="M3.577,17.685H.715A.715.715,0,0,0,0,18.4v2.862a.715.715,0,0,0,.715.715H3.577a.715.715,0,0,0,.715-.715V18.4A.715.715,0,0,0,3.577,17.685Zm0-14.31H.715A.715.715,0,0,0,0,4.09V6.952a.715.715,0,0,0,.715.715H3.577a.715.715,0,0,0,.715-.715V4.09A.715.715,0,0,0,3.577,3.375Zm0,7.155H.715A.715.715,0,0,0,0,11.245v2.862a.715.715,0,0,0,.715.715H3.577a.715.715,0,0,0,.715-.715V11.245A.715.715,0,0,0,3.577,10.53Zm18.6,7.87H7.87a.715.715,0,0,0-.715.715v1.431a.715.715,0,0,0,.715.715H22.18a.715.715,0,0,0,.715-.715V19.116A.715.715,0,0,0,22.18,18.4Zm0-14.31H7.87a.715.715,0,0,0-.715.715V6.237a.715.715,0,0,0,.715.715H22.18a.715.715,0,0,0,.715-.715V4.806A.715.715,0,0,0,22.18,4.09Zm0,7.155H7.87a.715.715,0,0,0-.715.715v1.431a.715.715,0,0,0,.715.715H22.18a.715.715,0,0,0,.715-.715V11.961A.715.715,0,0,0,22.18,11.245Z" transform="translate(0 -3.375)"/>
+                              </svg>
+                              
+                            <span class="font-medium inline color-active" routerLinkActive="active" >Planos</span>
+                        </a>
+                    </li>
+
+                    <li routerLinkActive="active" routerLink="/lojas">
+                        <a pRipple class="flex flex-wrap align-items-center cursor-pointer p-3 border-round  transition-duration-150 transition-colors"
+                          enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="21.896" height="19.463" viewBox="0 0 21.896 19.463" alt="icon-lojas" class="color-active mr-2 lg:mr-0 text-base lg:text-xl" routerLinkActive="active">
+                            <path id="ic_menu_lojas" d="M25.179,6H5.716V8.433H25.179ZM26.4,18.164V15.731L25.179,9.649H5.716L4.5,15.731v2.433H5.716v7.3H17.881v-7.3h4.866v7.3h2.433v-7.3ZM15.448,23.03h-7.3V18.164h7.3Z" transform="translate(-4.5 -6)"/>
+                          </svg>
+                            <span class="font-medium inline color-active" routerLinkActive="active" >Lojas</span>
+                        </a>
+                    </li>
+
+                    <li routerLinkActive="active" routerLink="/notificacoes">
+                        <a pRipple class="flex flex-wrap align-items-center cursor-pointer p-3 border-round  transition-duration-150 transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21.388" height="26.751" viewBox="0 0 21.388 26.751" alt="icon-notificacoes" class="color-active mr-2 lg:mr-0 text-base lg:text-xl" routerLinkActive="active">
+                                <g id="ic_menu_notificacoes" transform="translate(-6.761 -3.93)">
+                                  <path id="Caminho_3851" data-name="Caminho 3851" d="M17.827,31.88c2.079,0,3.216-1.471,3.216-3.544H14.6C14.6,30.409,15.741,31.88,17.827,31.88Z" transform="translate(-0.385 -1.198)"/>
+                                  <path id="Caminho_3852" data-name="Caminho 3852" d="M27.878,23.741c-1.03-1.357-3.056-2.153-3.056-8.23,0-6.238-2.755-8.745-5.322-9.347-.241-.06-.415-.14-.415-.394V5.575a1.631,1.631,0,1,0-3.263,0v.194c0,.247-.174.334-.415.394-2.574.608-5.322,3.109-5.322,9.347,0,6.078-2.026,6.867-3.056,8.23a1.327,1.327,0,0,0,1.063,2.126H26.822A1.327,1.327,0,0,0,27.878,23.741Z"/>
+                                </g>
+                              </svg>
+                              
+                            <span class="font-medium inline color-active" routerLinkActive="active">Notificações</span>
+                        </a>
                     </li>
 
                   
@@ -72,49 +115,8 @@
                         </a>
                     </li>
 
-                    <li routerLinkActive="active" class="color-active">
-                        <a pRipple class="flex align-items-center cursor-pointer p-3  border-round 
-                                      transition-duration-150 transition-colors" pStyleClass="@next" enterClass="hidden"
-                          enterActiveClass="slidedown" leaveToClass="hidden" leaveActiveClass="slideup">
-                          <svg xmlns="http://www.w3.org/2000/svg" width="21.896" height="19.463" viewBox="0 0 21.896 19.463" alt="icon-lojas" class="color-active mr-2 lg:mr-0 text-base lg:text-xl" routerLinkActive="active">
-                            <path id="ic_menu_lojas" d="M25.179,6H5.716V8.433H25.179ZM26.4,18.164V15.731L25.179,9.649H5.716L4.5,15.731v2.433H5.716v7.3H17.881v-7.3h4.866v7.3h2.433v-7.3ZM15.448,23.03h-7.3V18.164h7.3Z" transform="translate(-4.5 -6)"/>
-                          </svg>
-                            <span class="font-medium inline color-active" routerLinkActive="active" >Lojas</span>
-                            <i class="pi pi-chevron-down ml-auto"></i>
-                        </a>
-                        <ul
-                          class="list-none py-0 pl-3 pr-0 m-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
-                          <li>
-                            <a pRipple class="flex align-items-center justify-content-center cursor-pointer p-3
-                                transition-duration-150 transition-colors">
-                              <span class="font-medium inline" routerLinkActive="active" routerLink="/sub-menu">Gestão de Loja</span>
-                            </a>
-                          </li>
-                        </ul>
-                    </li>
-                   
-                    <li routerLinkActive="active" routerLink="/planos">
-                        <a pRipple class="flex flex-wrap align-items-center cursor-pointer p-3 border-round  transition-duration-150 transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22.896" height="18.603" viewBox="0 0 22.896 18.603" alt="icon-planos" class="color-active mr-2 lg:mr-0 text-base lg:text-xl" routerLinkActive="active">
-                                <path id="ic_menu_planos" d="M3.577,17.685H.715A.715.715,0,0,0,0,18.4v2.862a.715.715,0,0,0,.715.715H3.577a.715.715,0,0,0,.715-.715V18.4A.715.715,0,0,0,3.577,17.685Zm0-14.31H.715A.715.715,0,0,0,0,4.09V6.952a.715.715,0,0,0,.715.715H3.577a.715.715,0,0,0,.715-.715V4.09A.715.715,0,0,0,3.577,3.375Zm0,7.155H.715A.715.715,0,0,0,0,11.245v2.862a.715.715,0,0,0,.715.715H3.577a.715.715,0,0,0,.715-.715V11.245A.715.715,0,0,0,3.577,10.53Zm18.6,7.87H7.87a.715.715,0,0,0-.715.715v1.431a.715.715,0,0,0,.715.715H22.18a.715.715,0,0,0,.715-.715V19.116A.715.715,0,0,0,22.18,18.4Zm0-14.31H7.87a.715.715,0,0,0-.715.715V6.237a.715.715,0,0,0,.715.715H22.18a.715.715,0,0,0,.715-.715V4.806A.715.715,0,0,0,22.18,4.09Zm0,7.155H7.87a.715.715,0,0,0-.715.715v1.431a.715.715,0,0,0,.715.715H22.18a.715.715,0,0,0,.715-.715V11.961A.715.715,0,0,0,22.18,11.245Z" transform="translate(0 -3.375)"/>
-                              </svg>
-                              
-                            <span class="font-medium inline color-active" routerLinkActive="active" >Planos</span>
-                        </a>
-                    </li>
-                    
-                    <li routerLinkActive="active" routerLink="/notificacoes">
-                        <a pRipple class="flex flex-wrap align-items-center cursor-pointer p-3 border-round  transition-duration-150 transition-colors">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="21.388" height="26.751" viewBox="0 0 21.388 26.751" alt="icon-notificacoes" class="color-active mr-2 lg:mr-0 text-base lg:text-xl" routerLinkActive="active">
-                                <g id="ic_menu_notificacoes" transform="translate(-6.761 -3.93)">
-                                  <path id="Caminho_3851" data-name="Caminho 3851" d="M17.827,31.88c2.079,0,3.216-1.471,3.216-3.544H14.6C14.6,30.409,15.741,31.88,17.827,31.88Z" transform="translate(-0.385 -1.198)"/>
-                                  <path id="Caminho_3852" data-name="Caminho 3852" d="M27.878,23.741c-1.03-1.357-3.056-2.153-3.056-8.23,0-6.238-2.755-8.745-5.322-9.347-.241-.06-.415-.14-.415-.394V5.575a1.631,1.631,0,1,0-3.263,0v.194c0,.247-.174.334-.415.394-2.574.608-5.322,3.109-5.322,9.347,0,6.078-2.026,6.867-3.056,8.23a1.327,1.327,0,0,0,1.063,2.126H26.822A1.327,1.327,0,0,0,27.878,23.741Z"/>
-                                </g>
-                              </svg>
-                              
-                            <span class="font-medium inline color-active" routerLinkActive="active">Notificações</span>
-                        </a>
-                    </li>
+                  
+                  
                     <li routerLinkActive="active" (click)="exit()">
                         <a pRipple class="flex flex-wrap align-items-center cursor-pointer p-3 border-round  transition-duration-150 transition-colors">
                             <svg xmlns="http://www.w3.org/2000/svg" width="20.146" height="15.487" viewBox="0 0 20.146 15.487" class="color-active mr-2 lg:mr-0 text-base lg:text-xl" routerLinkActive="active">

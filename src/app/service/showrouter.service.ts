@@ -6,7 +6,7 @@ import { Injectable } from "@angular/core";
   })
 
 export class ShowRouterService{
-    private rotasDetalhes: string[] = ['/usuarios/editar-usuario', '/lojas/detalhe-loja', '/planos/detalhe-plano'];
+    private rotasDetalhes: string[] = ['/usuarios/editar-usuario', '/lojas/detalhe-loja', '/planos/detalhe-plano', '/motos/detalhe-moto'];
 
     showIcons: boolean = true;
 

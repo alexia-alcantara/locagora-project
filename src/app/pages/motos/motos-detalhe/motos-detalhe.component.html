@@ -1,0 +1,81 @@
+<p-card>
+    <div class="grid">
+        <div class="col-12 md:col-5 lg:col-5">
+            <div class="col-12 formgrid grid">
+
+                <div class="field col-12 md:col-12">
+                    <label for="nameMoto">Nome da Moto</label>
+                    <input id="nameMoto" type="text" class="text-base text-color surface-overlay p-1 border-1 border-solid surface-border border-round-sm appearance-none outline-none focus:border-primary w-full">
+                </div>
+
+                <div class="field col-12 md:col-6">
+                    <label for="potenciaCC">Potência (cc)</label>
+                    <input id="potenciaCC" type="text" class="text-base text-color surface-overlay p-1 border-1 border-solid surface-border border-round-sm appearance-none outline-none focus:border-primary w-full">
+                </div>
+
+                <div class="field col-12 md:col-6">
+                    <label for="potenciaKM">Potência (KM/H)</label>
+                    <input id="potenciaKM" type="text" class="text-base text-color surface-overlay p-1 border-1 border-solid surface-border border-round-sm appearance-none outline-none focus:border-primary w-full">
+                    
+                </div>
+
+                <div class="field col-12 md:col-6">
+                    <label for="peso">Peso</label>
+                    <input id="peso" type="text" class="text-base text-color surface-overlay p-1 border-1 border-solid surface-border border-round-sm appearance-none outline-none focus:border-primary w-full">
+                </div>
+
+                <div class="field col-12 md:col-6">
+                    <label for="autonomia">Autonomia (L)</label>
+                    <input id="autonomia" type="text" class="text-base text-color surface-overlay p-1 border-1 border-solid surface-border border-round-sm appearance-none outline-none focus:border-primary w-full">
+                    
+                </div>
+
+            </div>
+        </div>
+
+
+        <div class="col-12 md:col-6 lg:col-6">
+            <div class="col-12">
+                <label for="description">Descrição</label>
+                <textarea id="description" type="text" rows="10" class="text-base text-color surface-overlay p-2 border-1 border-solid surface-border border-round appearance-none outline-none focus:border-primary w-full"></textarea>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <div class="col-12">
+        <p-button label="Adicionar imagem" styleClass="p-button-save p-button-blue" icon="pi pi-plus"></p-button>
+    </div>
+
+    <div class="grid">
+        <div class="col-12 md:col-6 xl:col-12">
+            <div class="flex flex-wrap py-3 gap-3">
+                <div class="flex flex-column align-items-center" *ngFor="let photo of photoList; let i = index">
+                    <div class="icon-top-right">
+                        <img src="../../../assets/images/foto-moto.jpg" alt="imagem-moto" class="img-moto">
+                        <i class="pi pi-trash"></i>
+                      </div>
+
+                    <div class="flex py-2">
+                        <p-radioButton name="pizza" [value]="photo" [(ngModel)]="photos" [inputId]="'photo' + (i + 1)"></p-radioButton>
+                        <label [for]="'photo' + (i + 1)" class="ml-2">Foto principal</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="field col-12 xl:col-10">
+        <div class="flex gap-3 pt-4 justify-content-center">
+            <p-button label="Excluir Moto" styleClass="p-button-outlined p-button-danger" icon="pi pi-trash"></p-button>
+
+            <p-button label="Cancelar" styleClass="p-button-danger" icon="pi pi-times"></p-button>
+
+            <p-button label="Salvar" styleClass="p-button-save" icon="pi pi-check"></p-button>
+
+        </div>
+    </div>
+
+ 
+</p-card>

@@ -17,6 +17,8 @@ import { LojasComponent } from './pages/lojas/lojas.component';
 import { LojasDetalheComponent } from './pages/lojas/lojas-detalhe/lojas-detalhe.component';
 import { NotificacoesComponent } from './pages/notificacoes/notificacoes.component';
 import { DetalheUsuarioComponent } from './pages/usuarios/detalhe-usuario/detalhe-usuario.component';
+import { MotosComponent } from './pages/motos/motos.component';
+import { MotosDetalheComponent } from './pages/motos/motos-detalhe/motos-detalhe.component';
 
 
 // PrimeNG
@@ -27,6 +29,7 @@ import { DropdownModule } from 'primeng/dropdown';
 import { FileUploadModule } from 'primeng/fileupload';
 import { ImageModule } from 'primeng/image';
 import { InputTextModule } from 'primeng/inputtext';
+import { RadioButtonModule } from 'primeng/radiobutton';
 import { StyleClassModule } from 'primeng/styleclass';
 import { TableModule } from 'primeng/table';
 
@@ -46,7 +49,9 @@ import { TableModule } from 'primeng/table';
     LojasComponent,
     LojasDetalheComponent,
     NotificacoesComponent,
-    DetalheUsuarioComponent
+    DetalheUsuarioComponent,
+    MotosComponent,
+    MotosDetalheComponent
   ],
   imports: [
     BrowserModule,
@@ -62,6 +67,7 @@ import { TableModule } from 'primeng/table';
     HttpClientModule,
     InputTextModule,
     ReactiveFormsModule,
+    RadioButtonModule,
     StyleClassModule,
     TableModule
   ],

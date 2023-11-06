@@ -8,21 +8,27 @@
 >
 <ng-template pTemplate="header">
     <tr>
-        <th>Nome do Contrato</th>
+        <th>Nome do Contato</th>
+        <th>CPF</th>
         <th>E-mail</th>
         <th>Telefone</th>
         <th>Endereço</th>
+        <th>Loja</th>
         <th>Plano</th>
+        <th>Moto</th>
         <th>Status</th>
     </tr>
 </ng-template>
 <ng-template pTemplate="body" let-contacts>
     <tr>
         <td>{{ contacts.name }}</td>
+        <td>{{ contacts.cpf }}</td>
         <td>{{ contacts.email }}</td>
         <td>{{ contacts.telephone }}</td>
         <td>{{ contacts.address }}</td>
+        <td>{{ contacts.shop }}</td>
         <td>{{ contacts.planName }}</td>
+        <td>{{ contacts.moto }}</td>
         <td>
             <p-dropdown [options]="status" [(ngModel)]="selectedStatus" optionLabel="name"></p-dropdown>
 
