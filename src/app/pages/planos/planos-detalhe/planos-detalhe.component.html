@@ -9,8 +9,8 @@
                 </div>
 
                 <div class="field col-12 md:col-6">
-                    <label for="valueBRL">Valor 1</label>
-                    <input id="valueBRL" type="text" class="text-base text-color surface-overlay p-1 border-1 border-solid surface-border border-round-sm appearance-none outline-none focus:border-primary w-full">
+                    <label for="moto">Moto</label>
+                    <p-dropdown [options]="motos" [(ngModel)]="selectedMotos" optionLabel="name"></p-dropdown>
                 </div>
 
                 <div class="field col-12 md:col-5">
@@ -26,8 +26,8 @@
                 </div>
 
                 <div class="field col-12 md:col-6">
-                    <label for="valueBRL2">Valor 2</label>
-                    <input id="valueBRL2" type="text" class="text-base text-color surface-overlay p-1 border-1 border-solid surface-border border-round-sm appearance-none outline-none focus:border-primary w-full">
+                    <label for="moto">Moto</label>
+                    <p-dropdown [options]="motos" [(ngModel)]="selectedMotos" optionLabel="name"></p-dropdown>
                 </div>
 
                 <div class="field col-12 md:col-5">
@@ -44,8 +44,8 @@
                 </div>
 
                 <div class="field col-12 md:col-6">
-                    <label for="valueBRL3">Valor 3</label>
-                    <input id="valueBRL3" type="text" class="text-base text-color surface-overlay p-1 border-1 border-solid surface-border border-round-sm appearance-none outline-none focus:border-primary w-full">
+                    <label for="moto">Moto</label>
+                    <p-dropdown [options]="motos" [(ngModel)]="selectedMotos" optionLabel="name"></p-dropdown>
                 </div>
 
                 <div class="field col-12 md:col-5">
@@ -63,7 +63,7 @@
 
                 <div class="field col-12 md:col-12">
                     <div class="flex justify-content-end align-items-center">
-                        <span class="text-plus-value font-bold">+ Acrescentar valor</span>
+                        <span class="text-plus-value font-normal">+ Adicionar moto</span>
                     </div>
                 </div>
             </div>
@@ -116,6 +116,12 @@
                     </div>
                 </div>
 
+                <div class="field col-12 md:col-12">
+                    <div class="flex justify-content-end align-items-center">
+                        <span class="text-plus-value font-normal">+ Adicionar Vantagem</span>
+                    </div>
+                </div>
+
             
             </div>
         </div>
@@ -155,7 +161,24 @@
                     </div>
                 </div>
 
+                <div class="field col-12 md:col-12">
+                    <div class="flex justify-content-end align-items-center">
+                        <span class="text-plus-value font-normal">+ Adicionar Forma de Pagto</span>
+                    </div>
+                </div>
+
             
+            </div>
+        </div>
+
+        <div class="field col-12 xl:col-10">
+            <div class="flex gap-3 pt-4 justify-content-center">
+                <p-button label="Excluir Moto" styleClass="p-button-outlined p-button-danger" icon="pi pi-trash"></p-button>
+    
+                <p-button label="Cancelar" styleClass="p-button-danger" icon="pi pi-times"></p-button>
+    
+                <p-button label="Salvar" styleClass="p-button-save" icon="pi pi-check"></p-button>
+    
             </div>
         </div>
     </div>

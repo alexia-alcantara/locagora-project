@@ -2,7 +2,7 @@
 
 .surface-card{
     .font-title{
-        font: normal normal 600 17px/33px Segoe UI;
+        font: normal normal 600 16px/33px Segoe UI;
     }
     .font-subtitle{
         font: normal normal bold 17px/25px Segoe UI;
@@ -12,10 +12,20 @@
         margin-bottom: 0.2rem;
         
     }
-
-    .content{
-        font: normal normal normal 15px/20px Segoe UI;
-        color: $color-black;
+    .pi-chevron-up, .pi-chevron-down{
+        color: #A6A6A6;
+        font-weight: bold;
+        opacity: 1;
+        font-size: 0.9rem;
+    }
+    hr{
+        color: #DFE7EF;
+        opacity: 1;
+        margin: 0;
     }
 
+    .text-title{
+        font: normal normal 600 16px/34px Segoe UI;
+    }
+   
 }

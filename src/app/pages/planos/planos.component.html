@@ -1,57 +1,41 @@
 <div class="grid align-items-baseline">
-    <div class="col-9">
+    <div class="col-10">
      <div class="grid">
-        <div class="col-12 md:col-6 xl:col-4 p-3">
-            <div class="surface-card p-3 border-round-lg">
-                <div class="flex justify-content-between align-items-center mb-3">
-                    <div>
-                        <span class="block text-900 font-semibold font-title align-items-center mb-1">Nome do plano</span>
-                      
-                    </div>
-                  
+        <div *ngFor="let dado of dadosCard; let i = index" class="col-12 col-12 lg:col-5 xl:col-4 p-3">
+            <div class="surface-card p-3 border-round-lg" (click)="togglePanel(i)">
+              <div class="mb-3">
+                <div class="flex align-items-center justify-content-between cursor-pointer">
+                  <span class="block text-900 font-semibold font-title align-items-center mb-1">{{ dado.nome }}</span>
+                  <i [ngClass]="i === openCard ? 'pi pi-chevron-up' : 'pi pi-chevron-down'"></i>
                 </div>
-                
-            </div>
-        </div>
+                <hr>
+        
+                <div class="py-2" *ngIf="i === openCard">
+                    <div class="flex align-items-center pb-4" *ngFor="let moto of motos">
+                        <img [src]="moto.imagemUrl" style="width: 81px; height: 70px; padding: 0.5rem;" class="mr-3 border-black-alpha-90 border-1 border-circle" />
+                            <div class="flex flex-column align-items-start">
+                                <span class="text-900 mb-1 text-title">{{ moto.nome }}</span>
+                            </div>
+                    </div>
 
-        <div class="col-12 md:col-6 xl:col-4 p-3">
-            <div class="surface-card p-3 border-round-lg">
-                <div class="flex justify-content-between align-items-center mb-3">
-                    <div>
-                        <span class="block text-900 font-semibold font-title align-items-center mb-1">Nome do plano</span>
-                        
+                    <div class="flex gap-4">
+                        <p-button label="Excluir Moto" styleClass="p-button-outlined p-button-danger" icon="pi pi-trash"></p-button>
+                        <p-button label="Ver Detalhes" styleClass="p-button-outlined p-button-secondary" icon="pi pi-angle-right" iconPos="right"></p-button>
                     </div>
-                    
                 </div>
+                <hr>
+
                
-            </div>
-        </div>
 
-        <div class="col-12 md:col-6 xl:col-4 p-3">
-            <div class="surface-card p-3 border-round-lg">
-                <div class="flex justify-content-between align-items-center mb-3">
-                    <div>
-                        <span class="block text-900 font-semibold font-title align-items-center mb-1">Nome do plano</span>
-                        <div class="flex">
-                            <span class="font-bold font-subtitle mb-2">R$00,90/dia</span>
-                        </div>
-                    </div>
-                    <div class="flex align-items-center justify-content-between flex-column">
-                        <i class="pi pi-times text-gray-400 text-lg font-bold mb-3"></i>
-                        <i class="pi pi-pencil text-gray-400 text-lg font-bold"></i>
-                    </div>
-                </div>
-                <p class="content">Vantagem 1</p>
-                <p class="content">Vantagem 2</p>
-                <p class="content">Vantagem 3</p>
-                <p class="content">Vantagem 4</p>
+              </div>
             </div>
-        </div>
+          </div>
+
 
         
      </div>
     </div>
-    <div class="col-3 text-right">
+    <div class="col-2 text-right">
         <button pButton pRipple label="Adicionar Plano" icon="pi pi-plus" routerLink="./detalhe-plano" class="p-button p-button-principal p-button-rounded" ></button>
     </div>
 </div>

@@ -29,6 +29,7 @@ import { DropdownModule } from 'primeng/dropdown';
 import { FileUploadModule } from 'primeng/fileupload';
 import { ImageModule } from 'primeng/image';
 import { InputTextModule } from 'primeng/inputtext';
+import { PanelModule } from 'primeng/panel';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { StyleClassModule } from 'primeng/styleclass';
 import { TableModule } from 'primeng/table';
@@ -66,6 +67,7 @@ import { TableModule } from 'primeng/table';
     ImageModule,
     HttpClientModule,
     InputTextModule,
+    PanelModule,
     ReactiveFormsModule,
     RadioButtonModule,
     StyleClassModule,
