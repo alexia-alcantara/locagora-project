@@ -33,6 +33,7 @@ import { PanelModule } from 'primeng/panel';
 import { RadioButtonModule } from 'primeng/radiobutton';
 import { StyleClassModule } from 'primeng/styleclass';
 import { TableModule } from 'primeng/table';
+import { PlanDetailsComponent } from './components/plan-details/plan-details.component';
 
 
 
@@ -52,7 +53,8 @@ import { TableModule } from 'primeng/table';
     NotificacoesComponent,
     DetalheUsuarioComponent,
     MotosComponent,
-    MotosDetalheComponent
+    MotosDetalheComponent,
+    PlanDetailsComponent
   ],
   imports: [
     BrowserModule,

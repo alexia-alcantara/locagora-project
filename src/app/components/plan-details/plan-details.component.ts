@@ -5,11 +5,12 @@ interface Moto{
 }
 
 @Component({
-  selector: 'app-lojas-detalhe',
-  templateUrl: './lojas-detalhe.component.html',
-  styleUrls: ['./lojas-detalhe.component.scss']
+  selector: 'app-plan-details',
+  templateUrl: './plan-details.component.html',
+  styleUrls: ['./plan-details.component.scss']
 })
-export class LojasDetalheComponent {
+export class PlanDetailsComponent {
+  @Input() planDetails: any;
 
   motos: Moto[];
   selectedMoto: Moto[];
@@ -33,6 +34,4 @@ export class LojasDetalheComponent {
         { name: 'Moto 2'},
     ];
 }
-
-
 }
