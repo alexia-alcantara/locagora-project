@@ -8,6 +8,10 @@ interface TypeMoto{
   name: string;
 }
 
+interface Pagamento{
+  name: string;
+}
+
 @Component({
   selector: 'app-planos-detalhe',
   templateUrl: './planos-detalhe.component.html',
@@ -20,6 +24,9 @@ export class PlanosDetalheComponent {
   motos: TypeMoto[];
   selectedMotos: TypeMoto[];
 
+  pagamentos: Pagamento[];
+  selectedPagamentos: Pagamento[];
+
   ngOnInit(){
     this.periodos = [
       { name: 'Período 1'},
@@ -31,6 +38,12 @@ export class PlanosDetalheComponent {
 
     this.motos = [
       {name: 'Selecione'}
+    ];
+
+    this.pagamentos = [
+      {name: 'Pix'},
+      {name: 'Débito'},
+      {name: 'Crédito'},
     ]
   }
 

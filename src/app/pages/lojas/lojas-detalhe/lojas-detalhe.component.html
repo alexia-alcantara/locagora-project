@@ -53,33 +53,50 @@
         </div>
     </div>
 
-    <h6 class="border-bottom-1 pb-3 surface-border">Valores dos Planos</h6>
-    <div class="grid lg:col-8 pt-3">
-        <div class="formgrid grid">
-            <div class="field col-12 xl:col-3">
-                <label for="price">Preço Plano Fidelidade</label>
-                <input id="price" type="text" class="text-base text-color surface-overlay p-1 border-1 border-solid surface-border border-round-sm appearance-none outline-none focus:border-primary w-full">
+
+
+   <div class="row">
+    <div class="col-xl-4" *ngFor="let item of listPlans">
+        <div class="xl:col-12">
+            <h6 class="border-bottom-1 pb-3 surface-border">Nome do Plano</h6>
+        </div>
+
+        <div class="grid" *ngFor="let plano of planos">
+            <div class="xl:col-6">
+                <label for="moto">Moto</label>
+                <p-dropdown [options]="motos" [(ngModel)]="selectedMoto" optionLabel="name" [showClear]="true" placeholder="Selecione"></p-dropdown>
             </div>
 
-            <div class="field col-12 xl:col-3">
-                <label for="price">Preço Plano Anual</label>
-                <input id="price" type="text" class="text-base text-color surface-overlay p-1 border-1 border-solid surface-border border-round-sm appearance-none outline-none focus:border-primary w-full">
+            <div class="xl:col-6">
+                <label for="valor">Valor</label>
+                    <div class="flex ">
+                        <input id="valueBRL2" type="text" class="text-base text-color surface-overlay p-1 border-1 border-solid surface-border border-round-sm appearance-none outline-none focus:border-primary w-full">
+
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" class="ml-2">
+                            <path id="ic_menos" d="M12.563.563a12,12,0,1,0,12,12A12,12,0,0,0,12.563.563ZM6.175,14.5a.582.582,0,0,1-.581-.581v-2.71a.582.582,0,0,1,.581-.581H18.95a.582.582,0,0,1,.581.581v2.71a.582.582,0,0,1-.581.581Z" transform="translate(-0.563 -0.563)" fill="#ff3030"/>
+                        </svg>
+                    </div>
             </div>
+        </div>
 
-            <div class="field col-12 xl:col-3">
-                <label for="price">Preço Plano Mensal</label>
-                <input id="price" type="text" class="text-base text-color surface-overlay p-1 border-1 border-solid surface-border border-round-sm appearance-none outline-none focus:border-primary w-full">
-            </div>
-
-            <div class="field col-12 xl:col-10">
-                <div class="flex gap-3 pt-4 justify-content-center">
-                    <p-button label="Cancelar" styleClass="p-button-danger" icon="pi pi-times"></p-button>
-
-                    <p-button label="Salvar" styleClass="p-button-save"></p-button>
-
-                </div>
+        <div class="field col-12 md:col-12">
+            <div class="flex justify-content-end align-items-center">
+                <span class="text-plus-value font-normal">+ Adicionar Moto</span>
             </div>
         </div>
     </div>
+  
+   </div>
+
+   <div class="field col-12 xl:col-10">
+    <div class="flex gap-3 pt-4 justify-content-center">
+        <p-button label="Excluir Loja" styleClass="p-button-outlined p-button-danger" icon="pi pi-trash"></p-button>
+
+        <p-button label="Cancelar" styleClass="p-button-danger" icon="pi pi-times"></p-button>
+
+        <p-button label="Salvar" styleClass="p-button-save" icon="pi pi-check"></p-button>
+
+    </div>
+</div>
 
 </p-card>
