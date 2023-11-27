@@ -1,8 +1,9 @@
+@import '../../../../assets/scss/abstracts/variables';
+
 :host ::ng-deep .p-card{
     box-shadow: none;
 
     .field > label{
-        font: normal normal normal 16px/24px Segoe UI;
         color: #37322C;
     }
 
@@ -23,4 +24,20 @@
         margin-left: 5.3333% !important;
     }
 
+    .p-checkbox .p-checkbox-box{
+        border: 2px solid $color-black;
+
+    }
+    .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-highlight:hover{
+        background: $color-black;
+        border-color: $color-black;
+    }
+
+    .p-checkbox .p-checkbox-box.p-highlight{
+        background: $color-black;
+    }
+
+    .p-checkbox:not(.p-checkbox-disabled) .p-checkbox-box.p-focus{
+        box-shadow: none;
+    }
 }

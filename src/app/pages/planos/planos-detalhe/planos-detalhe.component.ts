@@ -12,6 +12,10 @@ interface Pagamento{
   name: string;
 }
 
+interface VigenciaPlano{
+  name: string;
+}
+
 @Component({
   selector: 'app-planos-detalhe',
   templateUrl: './planos-detalhe.component.html',
@@ -26,6 +30,16 @@ export class PlanosDetalheComponent {
 
   pagamentos: Pagamento[];
   selectedPagamentos: Pagamento[];
+  vigenciaPlan: VigenciaPlano[];
+  selectedVigencia: VigenciaPlano[];
+  selectedCategories: any[] = [];
+
+  categories: any[] = [
+      { name: 'Accounting', key: 'A' },
+      { name: 'Marketing', key: 'M' },
+      { name: 'Production', key: 'P' },
+      { name: 'Research', key: 'R' }
+  ];
 
   ngOnInit(){
     this.periodos = [
@@ -44,6 +58,10 @@ export class PlanosDetalheComponent {
       {name: 'Pix'},
       {name: 'Débito'},
       {name: 'Crédito'},
+    ];
+    
+    this.vigenciaPlan = [
+      {name: 'Selecione'}
     ]
   }
 

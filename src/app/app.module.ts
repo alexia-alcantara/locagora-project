@@ -24,6 +24,7 @@ import { MotosDetalheComponent } from './pages/motos/motos-detalhe/motos-detalhe
 // PrimeNG
 import { ButtonModule } from 'primeng/button';
 import { CardModule } from 'primeng/card';
+import { CheckboxModule } from 'primeng/checkbox';
 import { DialogModule } from 'primeng/dialog';
 import { DropdownModule } from 'primeng/dropdown';
 import { FileUploadModule } from 'primeng/fileupload';
@@ -62,6 +63,7 @@ import { PlanDetailsComponent } from './components/plan-details/plan-details.com
     BrowserAnimationsModule,
     ButtonModule,
     CardModule,
+    CheckboxModule,
     DialogModule,
     DropdownModule,
     FileUploadModule,
