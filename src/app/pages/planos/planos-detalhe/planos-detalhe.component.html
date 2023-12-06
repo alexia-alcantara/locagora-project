@@ -1,27 +1,24 @@
 <p-card>
     <div class="grid">
         <div class="col-12 md:col-6 lg:col-6">
-            <div class="formgrid grid">
+            <div class="field col-10 md:col-10">
+                <label for="namePlan">Nome do Plano</label>
+                <input id="namePlan" type="text" class="text-base text-color surface-overlay p-1 border-1 border-solid surface-border border-round-sm appearance-none outline-none focus:border-primary w-full">
+            </div>
 
-                <div class="field col-7 md:col-7">
-                    <label for="namePlan">Nome do Plano</label>
-                    <input id="namePlan" type="text" class="text-base text-color surface-overlay p-1 border-1 border-solid surface-border border-round-sm appearance-none outline-none focus:border-primary w-full">
-                </div>
+            <div class="field col-10 md:col-10">
+                <label for="namePlan">Vigência do Plano</label>
+                <p-dropdown [options]="vigenciaPlan" [(ngModel)]="selectedVigencia" optionLabel="name" [style]="{'width': '100%'}"></p-dropdown>
+            </div>
 
-                <div class="field col-7 md:col-7">
-                    <label for="namePlan">Vigência do Plano</label>
-                    <p-dropdown [options]="vigenciaPlan" [(ngModel)]="selectedVigencia" optionLabel="name" [style]="{'width': '100%'}"></p-dropdown>
-                </div>
+            <div class="col-12 md:col lg:col" [style]="{'flex-grow': '0.5'}"></div>
 
-                <div class="col-12 md:col lg:col" [style]="{'flex-grow': '0.5'}"></div>
-
-                <div class="field col-7 md:col-7">
-                    <label for="period">Periodicidade</label>
-                    <p-dropdown [options]="periodos" [(ngModel)]="selectedPeriodos" optionLabel="name" [style]="{'width': '100%'}"></p-dropdown>
-
-                </div>
+            <div class="field col-10 md:col-10">
+                <label for="period">Periodicidade</label>
+                <p-dropdown [options]="periodos" [(ngModel)]="selectedPeriodos" optionLabel="name" [style]="{'width': '100%'}"></p-dropdown>
 
             </div>
+            <hr>
         </div>
 
 
@@ -52,12 +49,24 @@
                     <span class="text-plus-value font-normal">+ Adicionar Vantagem</span>
                 </div>
             </div>
+            
+        </div>
+        
+        <div class="field col-12 xl:col-10">
+            <div class="flex gap-3 pt-4 justify-content-center">
+                <p-button label="Excluir Plano" styleClass="p-button-outlined p-button-danger" icon="pi pi-trash"></p-button>
+    
+                <p-button label="Cancelar" styleClass="p-button-danger" icon="pi pi-times"></p-button>
+    
+                <p-button label="Salvar" styleClass="p-button-save" icon="pi pi-check"></p-button>
+    
+            </div>
         </div>
     </div>
 
-    <hr>
+    
 
-    <div class="grid">
+    <!-- <div class="grid">
         <div class="col-12 md:col-6 lg:col-6">
             <div class="field">
                 <label for="period">Formas de Pagamento</label>
@@ -81,5 +90,5 @@
     
             </div>
         </div>
-    </div>
+    </div> -->
 </p-card>
